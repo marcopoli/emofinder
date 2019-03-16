@@ -1,0 +1,322 @@
+epoch 9
+
+4599/4599 [==============================] - 53s 11ms/step - loss: 0.2776 - acc: 0.9302 - val_loss: 1.5929 - val_acc: 0.5885
+roc-auc: 0.878 - roc-auc_val: 0.878
+
+              precision    recall  f1-score   support
+
+           0       0.76      0.71      0.73       472
+           1       0.72      0.67      0.70       474
+           2       0.49      0.48      0.49       449
+           3       0.56      0.68      0.62       360
+           4       0.57      0.58      0.58       430
+           5       0.45      0.54      0.49       370
+           6       0.55      0.47      0.51       512
+
+   micro avg       0.59      0.59      0.59      3067
+
+epoch 12
+   4599/4599 [==============================] - 52s 11ms/step - loss: 0.1286 - acc: 0.9656 - val_loss: 2.0889 - val_acc: 0.5820
+   roc-auc: 0.8753 - roc-auc_val: 0.8753
+                 precision    recall  f1-score   support
+
+              0       0.76      0.66      0.71       510
+              1       0.63      0.78      0.70       355
+              2       0.45      0.54      0.49       366
+              3       0.56      0.71      0.62       347
+              4       0.68      0.51      0.58       585
+              5       0.50      0.48      0.49       462
+              6       0.49      0.48      0.49       442
+
+      micro avg       0.58      0.58      0.58      3067
+      macro avg       0.58      0.59      0.58      3067
+   weighted avg       0.59      0.58      0.58      3067
+
+   epoch 17
+
+   4599/4599 [==============================] - 56s 12ms/step - loss: 0.0677 - acc: 0.9776 - val_loss: 2.4631 - val_acc: 0.5849
+roc-auc: 0.874 - roc-auc_val: 0.874
+              precision    recall  f1-score   support
+
+           0       0.68      0.78      0.73       387
+           1       0.68      0.70      0.69       427
+           2       0.50      0.50      0.50       444
+           3       0.61      0.65      0.63       410
+           4       0.61      0.57      0.58       469
+           5       0.45      0.52      0.48       377
+           6       0.57      0.45      0.50       553
+
+   micro avg       0.58      0.58      0.58      3067
+   macro avg       0.59      0.59      0.59      3067
+weighted avg       0.58      0.58      0.58      3067
+
+
+epoca 17 - adam
+4599/4599 [==============================] - 52s 11ms/step - loss: 0.0673 - acc: 0.9765 - val_loss: 2.3297 - val_acc: 0.5892
+roc-auc: 0.8781 - roc-auc_val: 0.8781
+              precision    recall  f1-score   support
+
+           0       0.80      0.69      0.74       508
+           1       0.73      0.62      0.67       512
+           2       0.49      0.48      0.48       449
+           3       0.57      0.68      0.62       369
+           4       0.64      0.55      0.59       515
+           5       0.41      0.55      0.47       325
+           6       0.49      0.55      0.52       389
+
+   micro avg       0.59      0.59      0.59      3067
+   macro avg       0.59      0.59      0.58      3067
+weighted avg       0.61      0.59      0.59      3067
+
+
+
+
+
+
+
+---------------------------------------------------
+[{'mapping': [('joy', 0), ('fear', 1), ('anger', 2), ('sadness', 3), ('disgust', 4), ('shame', 5), ('guilt', 6)], 'col': 0}]
+Epoch 13/100
+4599/4599 [==============================] - 27s 6ms/step - loss: 0.3361 - acc: 0.8913 - val_loss: 1.2472 - val_acc: 0.6244
+
+Epoch 00013: val_acc improved from 0.62439 to 0.62439, saving model to weights.13-1.25.hdf5
+roc-auc: 0.8979 - roc-auc_val: 0.8979
+              precision    recall  f1-score   support
+
+         joy       0.82      0.71      0.76       506
+        fear       0.70      0.78      0.74       394
+       anger       0.55      0.52      0.54       461
+     sadness       0.64      0.67      0.65       416
+     disgust       0.58      0.67      0.62       383
+       shame       0.53      0.49      0.51       478
+       guilt       0.56      0.57      0.56       429
+
+   micro avg       0.62      0.62      0.62      3067
+   macro avg       0.62      0.63      0.62      3067
+weighted avg       0.63      0.62      0.62      3067
+
+---------------------------------------glove
+4544/4599 [============================>.] - ETA: 2s - loss: 0.8285 - acc: 0.7066
+4599/4599 [==============================] - 286s 62ms/step - loss: 0.8271 - acc: 0.7071 - val_loss: 1.0880 - val_acc: 0.6241
+
+Epoch 00006: val_acc improved from 0.61037 to 0.62406, saving model to weights.06-1.09.hdf5
+roc-auc: 0.8987 - roc-auc_val: 0.8987
+              precision    recall  f1-score   support
+
+           0       0.86      0.68      0.76       555
+           1       0.71      0.74      0.72       416
+           2       0.45      0.60      0.52       329
+           3       0.63      0.70      0.66       397
+           4       0.69      0.57      0.63       530
+           5       0.49      0.52      0.50       413
+           6       0.54      0.56      0.55       427
+
+   micro avg       0.62      0.62      0.62      3067
+   macro avg       0.62      0.62      0.62      3067
+weighted avg       0.64      0.62      0.63      3067
+
+
+
+--------------------------------------------fasttext
+Epoch 6/100
+4599/4599 [==============================] - 28s 6ms/step - loss: 0.8230 - acc: 0.7071 - val_loss: 1.0473 - val_acc: 0.6358
+
+Epoch 00006: val_acc improved from 0.61982 to 0.63580, saving model to weights.06-1.05_fasttext.hdf5
+roc-auc: 0.9055 - roc-auc_val: 0.9055
+              precision    recall  f1-score   support
+
+           0       0.80      0.77      0.78       460
+           1       0.78      0.65      0.71       530
+           2       0.58      0.52      0.55       490
+           3       0.64      0.66      0.65       424
+           4       0.60      0.74      0.66       357
+           5       0.48      0.56      0.52       374
+           6       0.56      0.57      0.57       432
+
+   micro avg       0.64      0.64      0.64      3067
+   macro avg       0.64      0.64      0.63      3067
+weighted avg       0.64      0.64      0.64      3067
+
+
+NAIVE BAYES
+Name: emotion, Length: 7666, dtype: object
+roc-auc: 0.6343 - roc-auc_val: 0.6343
+              precision    recall  f1-score   support
+
+       anger       0.55      0.23      0.33      1028
+     disgust       0.36      0.40      0.38       397
+        fear       0.49      0.57      0.53       375
+       guilt       0.34      0.28      0.30       535
+         joy       0.47      0.63      0.54       322
+     sadness       0.32      0.50      0.39       286
+       shame       0.09      0.31      0.13       124
+
+   micro avg       0.37      0.37      0.37      3067
+   macro avg       0.37      0.42      0.37      3067
+weighted avg       0.43      0.37      0.37      3067
+
+ Acc: 0.37300293446364524
+ Pre: 0.37300293446364524
+ Rec: 0.37300293446364524
+ F1: 0.37300293446364524
+
+
+ SVM
+ Name: emotion, Length: 7666, dtype: object
+roc-auc: 0.7419 - roc-auc_val: 0.7419
+              precision    recall  f1-score   support
+
+       anger       0.53      0.41      0.46       560
+     disgust       0.55      0.61      0.58       399
+        fear       0.67      0.68      0.67       437
+       guilt       0.49      0.44      0.46       480
+         joy       0.72      0.69      0.71       455
+     sadness       0.54      0.67      0.60       357
+       shame       0.40      0.46      0.43       379
+
+   micro avg       0.56      0.56      0.56      3067
+   macro avg       0.56      0.57      0.56      3067
+weighted avg       0.56      0.56      0.56      3067
+
+ Acc: 0.5575480925986306
+ Pre: 0.5575480925986306
+ Rec: 0.5575480925986306
+ F1: 0.5575480925986306
+
+
+
+----------------------------------------------------EMOContext
+[{'mapping': [('others', 1), ('angry', 2), ('sad', 3), ('happy', 4)], 'col': 0}]
+
+glove
+Epoch 3/100
+30160/30160 [==============================] - 156s 5ms/step - loss: 0.3771 - acc: 0.8605 - val_loss: 0.3565 - val_acc: 0.8735
+
+Epoch 00003: val_acc improved from 0.86840 to 0.87348, saving model to weights.03-0.36_glove_emoC.hdf5
+roc-auc: 0.9429 - roc-auc_val: 0.9429
+              precision    recall  f1-score   support
+
+           0       0.91      0.96      0.93      4438
+           1       0.87      0.53      0.66       492
+           2       0.62      0.56      0.59       275
+           3       0.56      0.52      0.54       304
+
+   micro avg       0.87      0.87      0.87      5509
+   macro avg       0.74      0.64      0.68      5509
+weighted avg       0.87      0.87      0.87      5509
+
+ Acc: 0.8734797603920856
+ Pre: 0.6887019230769231
+ Rec: 0.5350140056022409
+ F1: 0.6022070415133999
+
+
+ google
+ 30160/30160 [==============================] - 155s 5ms/step - loss: 0.4334 - acc: 0.8431 - val_loss: 0.4017 - val_acc: 0.8657
+
+Epoch 00003: val_acc improved from 0.85496 to 0.86567, saving model to weights.03-0.40_google_emoC.hdf5
+roc-auc: 0.9275 - roc-auc_val: 0.9275
+              precision    recall  f1-score   support
+
+           0       0.90      0.95      0.92      4397
+           1       0.81      0.59      0.68       409
+           2       0.67      0.49      0.56       343
+           3       0.59      0.46      0.52       360
+
+   micro avg       0.87      0.87      0.87      5509
+   macro avg       0.74      0.62      0.67      5509
+weighted avg       0.86      0.87      0.86      5509
+
+
+fasttext
+30160/30160 [==============================] - 156s 5ms/step - loss: 0.2332 - acc: 0.9165 - val_loss: 0.2938 - val_acc: 0.9065
+
+Epoch 00005: val_acc improved from 0.88891 to 0.90652, saving model to weights.05-0.29_fasttext_emoC.hdf5
+roc-auc: 0.9607 - roc-auc_val: 0.9607
+              precision    recall  f1-score   support
+
+           0       0.93      0.96      0.95      4521
+           1       0.83      0.61      0.70       402
+           2       0.80      0.65      0.72       308
+           3       0.68      0.69      0.69       278
+
+   micro avg       0.91      0.91      0.91      5509
+   macro avg       0.81      0.73      0.76      5509
+weighted avg       0.90      0.91      0.90      5509
+
+ Acc: 0.90651660918497
+ Pre: 0.7692307692307693
+ Rec: 0.6477732793522267
+ F1: 0.7032967032967034
+
+---------------------------------------SEMEVAL 2018
+
+[{'col': 0, 'mapping': [('anger', 1), ('fear', 2), ('joy', 3), ('sadness', 4)]}]
+
+google
+Epoch 10/100
+2761/2761 [==============================] - 21s 8ms/step - loss: 0.1001 - acc: 0.9641 - val_loss: 0.7772 - val_acc: 0.8133
+
+Epoch 00010: val_acc improved from 0.81139 to 0.81329, saving model to weights.10-0.78_google_semeval2018.hdf5
+roc-auc: 0.9309 - roc-auc_val: 0.9309
+              precision    recall  f1-score   support
+
+           0       0.77      0.77      0.77       390
+           1       0.73      0.73      0.73       228
+           2       0.94      0.96      0.95       563
+           3       0.72      0.69      0.70       399
+
+   micro avg       0.81      0.81      0.81      1580
+   macro avg       0.79      0.79      0.79      1580
+weighted avg       0.81      0.81      0.81      1580
+
+ Acc: 0.8132911392405063
+ Pre: 0.8132911392405063
+ Rec: 0.8132911392405063
+ F1: 0.8132911392405063
+
+glove
+
+Epoch 5/100
+2761/2761 [==============================] - 20s 7ms/step - loss: 0.1730 - acc: 0.9366 - val_loss: 0.6526 - val_acc: 0.8184
+
+Epoch 00005: val_acc improved from 0.80823 to 0.81835, saving model to weights.05-0.65_glove_semeval2018.hdf5
+roc-auc: 0.9405 - roc-auc_val: 0.9405
+              precision    recall  f1-score   support
+
+           0       0.77      0.80      0.78       373
+           1       0.75      0.69      0.72       247
+           2       0.97      0.94      0.96       594
+           3       0.68      0.72      0.70       366
+
+   micro avg       0.82      0.82      0.82      1580
+   macro avg       0.79      0.79      0.79      1580
+weighted avg       0.82      0.82      0.82      1580
+
+ Acc: 0.8183544303797469
+ Pre: 0.8183544303797469
+ Rec: 0.8183544303797469
+ F1: 0.8183544303797469
+
+fasttext
+
+Epoch 32/100
+2761/2761 [==============================] - 18s 6ms/step - loss: 0.0451 - acc: 0.9877 - val_loss: 0.8898 - val_acc: 0.8367
+
+Epoch 00032: val_acc improved from 0.83354 to 0.83671, saving model to weights.32-0.89_fasttext_semeval2018.hdf5
+roc-auc: 0.9459 - roc-auc_val: 0.9459
+              precision    recall  f1-score   support
+
+           0       0.77      0.83      0.80       362
+           1       0.77      0.70      0.73       251
+           2       0.97      0.97      0.97       580
+           3       0.74      0.74      0.74       387
+
+   micro avg       0.84      0.84      0.84      1580
+   macro avg       0.81      0.81      0.81      1580
+weighted avg       0.84      0.84      0.84      1580
+
+ Acc: 0.8367088607594937
+ Pre: 0.8367088607594937
+ Rec: 0.8367088607594937
+ F1: 0.8367088607594937
